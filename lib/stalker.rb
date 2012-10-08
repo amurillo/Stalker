@@ -9,7 +9,7 @@ APP_ID = 370608209682694 # your app id
 APP_CODE = '8d068c45a4e323c98f8c1a34fb159705' # your app code
 SITE_URL = 'http://apps.facebook.com/370608209682694/' # your app site url
 
-class CHESSMASTER < Sinatra::Application
+class STALKER < Sinatra::Application
 	
 	include Koala
 
