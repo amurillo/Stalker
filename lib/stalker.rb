@@ -5,9 +5,9 @@ require 'sinatra'
 require 'koala'
 
 # register your app at facebook to get those infos
-APP_ID = 1103868579752754 # your app id
-APP_CODE = 'f64e9b940a97f4ae095e929837937fd4' # your app code
-SITE_URL = 'http://apps.facebook.com/1103868579752754/' # your app site url
+APP_ID = 370608209682694 # your app id
+APP_CODE = '8d068c45a4e323c98f8c1a34fb159705' # your app code
+SITE_URL = 'http://apps.facebook.com/370608209682694/' # your app site url
 
 class STALKER < Sinatra::Application
 	
