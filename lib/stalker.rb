@@ -5,9 +5,9 @@ require 'sinatra'
 require 'koala'
 
 # register your app at facebook to get those infos
-APP_ID = 1103868579752754 # your app id
-APP_CODE = 'f64e9b940a97f4ae095e929837937fd4' # your app code
-SITE_URL = 'http://fb-chess.herokuapp.com/' # your app site url
+APP_ID = 370608209682694 # your app id
+APP_CODE = '8d068c45a4e323c98f8c1a34fb159705' # your app code
+SITE_URL = 'http://apps.facebook.com/370608209682694/' # your app site url
 
 class CHESSMASTER < Sinatra::Application
 	
@@ -26,9 +26,9 @@ class CHESSMASTER < Sinatra::Application
 			@graph.put_wall_post("Sign up from Chessmaster!" + Time.now.to_s )
 			# or publish to someone else (if you have the permissions too ;) )
 			# @graph.put_wall_post("Checkout my new cool app!", {}, "someoneelse's id")
-			erb :index
+			erb :aunteticar
 		else
-			erb :index
+			erb :aunteticar
 		end		
 	end
 
@@ -53,26 +53,26 @@ class CHESSMASTER < Sinatra::Application
 		redirect '/'
 	end
 
-	get '/games' do
+	get '/principal' do
 		if session['access_token']
-			erb :games
+			erb :principal
 		else
   			redirect '/login'
   		end
 	end
 
-	get '/chessboard' do
+	get '/objetivos' do
 		if session['access_token']
-			erb :chessboard
+			erb :objetivos
 		else
 			redirect '/login'
 		end
   		
 	end
 
-	get '/about' do
+	get '/mensajes' do
 		if session['access_token']
-			erb :about
+			erb :mensajes
 		else
 			redirect '/login'
 		end
