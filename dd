@@ -1,0 +1,143 @@
+[33mcommit 62f7ca9e46ebb4d93ebd0e5f67764cfd9bb10130[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Tue Oct 9 22:46:12 2012 -0500
+
+    cambio url
+
+[33mcommit f82915c8eff336f682a2797653169a3383516dc7[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Tue Oct 9 22:36:13 2012 -0500
+
+    arreglar error
+
+[33mcommit 31ecb2123d01be4d19da1ac4d4aea829a18acf70[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Tue Oct 9 21:59:17 2012 -0500
+
+    cambios interfaces
+
+[33mcommit 9c4045dc93494458edf57dad79a5f3c35fc8bff8[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Mon Oct 8 02:06:53 2012 -0500
+
+    as
+    
+    asd
+
+[33mcommit a35e87ffe21c5c1f8b0310896e4ce711ab3ad744[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Mon Oct 8 01:27:01 2012 -0500
+
+    df
+    
+    df
+
+[33mcommit 126ad9f6dd140580f1d29e70bf6ffb616f68b6b2[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Mon Oct 8 01:23:00 2012 -0500
+
+    asd
+    
+    as
+
+[33mcommit 2f0edda3580edf352b202c9ba44584e62c4855c6[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 22:56:33 2012 -0500
+
+    AS
+    
+    AS
+
+[33mcommit 9a358bf502ed9cd0bb376de47ecabc3297887bda[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 22:53:23 2012 -0500
+
+    A
+    
+    REGRESO
+
+[33mcommit b5f0d9e163e5b368cc95f0cd1c00e458e7fa65fa[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 22:34:25 2012 -0500
+
+    pruebas
+
+[33mcommit 159880deedc2b6705f468a4b708aa0443f96b917[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 22:28:50 2012 -0500
+
+    12
+    
+    pruebas
+
+[33mcommit 7c44053313e3379835d4d26ae2633814999d3bb8[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 22:02:50 2012 -0500
+
+    a
+    
+    autenticascion
+
+[33mcommit 76489f9f681efa7ad46c7b7c27689eef936d52ab[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 21:34:51 2012 -0500
+
+    INTERFAZ
+    
+    ARREGLO INTERFACES
+
+[33mcommit ce417b0011c98fb17a195bea6bbbfbf7d964b3f9[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 21:24:35 2012 -0500
+
+    FACEBOOK
+    
+    1era prueba conexion FACEBOOK
+
+[33mcommit 0caae50d08de6bb3e541345b65fd79647a2fdc8c[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 19:34:22 2012 -0500
+
+    falto .lock
+
+[33mcommit 0e54e2aff0f78f779e1be2a6887da6c3d11e4f18[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Oct 7 19:29:33 2012 -0500
+
+    Pase a Heroku
+
+[33mcommit 2a891b34540174719db9d5309d04ea9850f1d062[m
+Author: Sebastian <lsebastianguerra@gmail.com>
+Date:   Thu Oct 4 20:53:51 2012 -0500
+
+    Update README.md
+
+[33mcommit 84de2482f5592e759a05277915a728da746d8276[m
+Author: alejandro murillo corrales <amurillo@petroperu.com.pe>
+Date:   Thu Oct 4 18:06:36 2012 -0500
+
+    Actualizacion Sinatra y Mogli
+    
+    Mogli provoca error desconocido
+
+[33mcommit c094210ed5d4944df689354f0c22eba09bbf34e2[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Sep 16 20:38:08 2012 -0500
+
+    Ultimas pantallas
+    
+    Pendiente mensajes
+
+[33mcommit 6320b07c2e811539ec56c9164dc9f8f1da11debf[m
+Author: Alejandro Murillo Corrales <amurillo@petroperu.com.pe>
+Date:   Sun Sep 16 17:43:23 2012 -0500
+
+    Primeras pantallas
+    
+    Pantallas con Bootstrap
+
+[33mcommit e3be46f23d3c850228ac8932910acaa4de30c6c1[m
+Author: amurillo <amurillo@petroperu.com.pe>
+Date:   Sun Sep 16 15:41:40 2012 -0700
+
+    Initial commit
