@@ -7,7 +7,7 @@ require 'koala'
 # register your app at facebook to get those infos
 APP_ID = 1103868579752754 # your app id
 APP_CODE = 'f64e9b940a97f4ae095e929837937fd4' # your app code
-SITE_URL = 'http://hidden-brook-9507.herokuapp.com' # your app site url
+SITE_URL = 'http://hidden-brook-9507.herokuapp.com/' # your app site url
 
 class STALKER < Sinatra::Application
 	
