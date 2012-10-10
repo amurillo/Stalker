@@ -43,10 +43,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html"><%= @user_info['name'] %></a>
+          <a class="brand" href="index.html">Administrador</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as <%= @user_info['name']%>
+              Logged in as <a href="#" class="navbar-link">Admin</a>
             </p>
             <ul class="nav">
               <li class="active"><a href="index.html">Home</a></li>
@@ -63,29 +63,52 @@
 
 
 
-
-
-      <div class="container-fluid">
+    <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Navegacion</li>
-               <li><a href="index.html"><i class="icon-home icon-black"></i> Home</a></li>
+ 
+              <li><a href="index.html"><i class="icon-home icon-black"></i> Home</a></li>
 			     <li><a href="principal.html"><i class="icon-flag icon-black"></i> Principal</a></li>
                <li><a href="objetivos.html"><i class="icon-check"></i> Seguimiento</a></li>
-             <li><a href="#"><i class="icon-inbox"></i> Mensajes</a></li>
+             <li><a href="mensajes.html"><i class="icon-inbox"></i> Mensajes</a></li>
               <li class="nav-header">Admin</li>
         <li><a href="#"><i class="icon-cog"></i> Administracion</a></li>
                <li><a href="#"><i class="icon-flag"></i> Ayuda</a></li>
                </ul>
           </div><!--/.well -->
         </div><!--/span-->
-       
-	   <div class="span9">
+		
+		
+		
+        <div class="span9">
           <div class="hero-unit">
-          <%= yield %>
-		    </div>
+            <h1>Proyecto "STALKER"</h1>
+            <p>Aplicacion que permitira hacer un seguimiento completo a los contactos elegidos del Facebook.</p>
+            <p><a href="principal.html" class="btn btn-primary btn-large" >Mas &raquo;</a></p>
+          </div>
+         <div class="well data-bar">
+		 
+	<div  class="span4">
+	<h1>29</h1>
+	<h6>Objetivos</h6>
+	</div>
+	<div class="span4 last">
+	<h1>20</h1>
+	<h6>Mensajes</h6>
+	</div>
+
+	<h1>2</h1>
+	<h6>Usuarios</h6>
+	
+
+
+</div>
+<div class="panel">
+  <img alt="Dash-graph" src="../images/dash-graph.png?">
+</div>
       <hr>
 
       <footer>
