@@ -53,7 +53,7 @@ class STALKER < Sinatra::Application
 		redirect '/'
 	end
 
-	get '/principal' do
+	get '/principal.html' do
 		if session['access_token']
 			erb :principal
 		else
@@ -61,7 +61,7 @@ class STALKER < Sinatra::Application
   		end
 	end
 
-	get '/objetivos' do
+	get '/objetivos.html' do
 		if session['access_token']
 			erb :objetivos
 		else
@@ -70,9 +70,18 @@ class STALKER < Sinatra::Application
   		
 	end
 
-	get '/mensajes' do
+	get '/mensajes.html' do
 		if session['access_token']
 			erb :mensajes
+		else
+			redirect '/login'
+		end
+  		
+	end
+	
+		get '/index.html' do
+		if session['access_token']
+			erb :index
 		else
 			redirect '/login'
 		end
