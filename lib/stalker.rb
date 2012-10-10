@@ -78,5 +78,14 @@ class STALKER < Sinatra::Application
 		end
   		
 	end
+	
+		get '/index' do
+		if session['access_token']
+			erb :index
+		else
+			redirect '/login'
+		end
+  		
+	end
 end
 
