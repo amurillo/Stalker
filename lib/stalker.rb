@@ -79,7 +79,7 @@ class STALKER < Sinatra::Application
   		
 	end
 	
-		get '/index.html' do
+		get '/index' do
 		if session['access_token']
 			erb :index
 		else
