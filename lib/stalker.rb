@@ -80,8 +80,14 @@ class STALKER < Sinatra::Application
 	end
 =begin	
 <<<<<<< HEAD
+
+<<<<<<< HEAD
 	get '/index.html' do
 =======
+		get '/index' do
+>>>>>>> 6c7bd6ba85b979febfa22a0add3fe5b8b5181f4f
+=======
+	
 		get '/index' do
 >>>>>>> 6c7bd6ba85b979febfa22a0add3fe5b8b5181f4f
 		if session['access_token']
@@ -92,7 +98,11 @@ class STALKER < Sinatra::Application
   		
 	end
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 6c7bd6ba85b979febfa22a0add3fe5b8b5181f4f
+
 =======
 >>>>>>> 6c7bd6ba85b979febfa22a0add3fe5b8b5181f4f
 =end
