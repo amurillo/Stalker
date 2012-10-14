@@ -7,9 +7,9 @@
 	<% if session[:access_token] %>
 	<% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 	<% @user_info = @api.get_object("me") %>
-		<p><a href="/logout" class="btn btn-primary btn-large" >Log out &raquo;</a></p>
+		<p><a href="/principal.html" class="btn btn-primary btn-large" >Mas &raquo;</a></p>
 		<% else %>
-		<a class="btn btn-primary btn-large" href="/login" >Mas &raquo;</a>
+		<a class="btn btn-primary btn-large" href="/login" >Log In &raquo;</a>
 		<% end %>  	
           </div>
 		  
