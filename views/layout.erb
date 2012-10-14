@@ -48,10 +48,15 @@
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 		  <% @user_info = @api.get_object("me") %>
           <a class="brand" href="index.html"><%= @user_info['name'] %></a>
-		  <% end %>
+		   <% end %>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Logged in as Admin
+		 <% if session[:access_token] %>
+		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
+		  <% @user_info = @api.get_object("me") %>
+            <a class="brand" href="/logout"> Logged in as <%= @user_info['name'] %></a>
+				   <% end %>
+				   			   
             </p>
             <ul class="nav">
               <li class="active"><a href="index.html">Home</a></li>
