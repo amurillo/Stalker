@@ -23,7 +23,6 @@ class STALKER < Sinatra::Application
 			# for example:
 			@graph = Koala::Facebook::GraphAPI.new(session["access_token"])
 			# publish to your wall (if you have the permissions)
-			
 			@graph.put_wall_post("Sign up from Stalker!" + Time.now.to_s )
 			# or publish to someone else (if you have the permissions too ;) )
 			# @graph.put_wall_post("Checkout my new cool app!", {}, "someoneelse's id")
@@ -37,7 +36,7 @@ class STALKER < Sinatra::Application
 		# generate a new oauth object with your app data and your callback url
 		session['oauth'] = Facebook::OAuth.new(APP_ID, APP_CODE, SITE_URL + 'callback')
 		# redirect to facebook to get your code
-		redirect session['oauth'].url_for_oauth_code(:permissions => "publish_stream","publish_actions","user_likes","user_photos","user_photo_video_tags","friends_hometown","friends_birthday")
+		redirect session['oauth'].url_for_oauth_code(:permissions => "publish_stream")
 		# redirect session['oauth'].url_for_oauth_code()
 	end
 
