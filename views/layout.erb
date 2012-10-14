@@ -46,9 +46,8 @@
 		  
 		  <% if session[:access_token] %>
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
-		  <% @amigos = @api.get_object("me",friends) %>
 		  <% @user_info = @api.get_object("me") %>
-          <a class="brand" href="index.html"><%= @amigos['name'] %></a>
+          <a class="brand" href="index.html"><%= @user_info['name'] %></a>
 		   <% end %>
           <div class="nav-collapse collapse">
             <p> <class="navbar-text pull-right">
