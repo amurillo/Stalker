@@ -1,5 +1,13 @@
 	
-		
+		<% if session[:access_token] %>
+		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
+		  <% @user_info = @api.get_object("me") %>
+		   <% @amigo= @user_info.friends(:name, :gender, :hometown,:birthday).sort_by {rand}.first unless @friend %>
+          <a class="brand" href="index.html"><%= @amigo %></a>
+		     <% end %>
+			 
+			 
+			 
  <div class="span9">
           <div class="hero-unit">
             <h1>Objetivos</h1>

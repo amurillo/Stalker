@@ -31,12 +31,14 @@ class STALKER < Sinatra::Application
 			erb :index
 		end		
 	end
+	
 
 	get '/login' do
+		FACEBOOK_SCOPE = 'publish_stream,publish_actions,user_likes,user_photos,user_photo_video_tags,friends_hometown,friends_birthday'
 		# generate a new oauth object with your app data and your callback url
 		session['oauth'] = Facebook::OAuth.new(APP_ID, APP_CODE, SITE_URL + 'callback')
 		# redirect to facebook to get your code
-		redirect session['oauth'].url_for_oauth_code(:permissions => "publish_stream")
+		redirect session['oauth'].url_for_oauth_code(:permissions => FACEBOOK_SCOPE)
 		# redirect session['oauth'].url_for_oauth_code()
 	end
 
