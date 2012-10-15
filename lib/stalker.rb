@@ -99,11 +99,12 @@ class STALKER < Sinatra::Application
 	
 	def ToTable (table_array, table_class)
 	headers = "<tr>#{table_array[0].keys.to_cells('th')}</tr>"
-	cells = table_array.map do |row|
+	cells = table_array.map{ |each_row|
 	"<tr>#{row.values.to_cells('td')}</tr>"
-	end.join("\n  ")
+	}.join
     table = "<table class=\"#{table_class}\"><thead>#{headers}</thead><tbody>#{cells}</tbody></table>"
 	end
+
 		
 end
 
