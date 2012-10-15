@@ -3,6 +3,8 @@ APP_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 require 'rubygems'
 require 'sinatra'
 require 'koala'
+requiere 'builder'
+
 
 # register your app at facebook to get those infos
 APP_ID = 1103868579752754 # your app id
@@ -97,13 +99,14 @@ class STALKER < Sinatra::Application
 	end
 
 	def ToTable (table_array, table_class)
-    headers = "<tr>" + ToCell('th',table_array[0]) + "</tr>"
+    headers = "<tr>" + ToCell('th',table_array[1]) + "</tr>"
     cells = table_array[1..table_array.count].map{ |each_row|
         "<tr>#{ToCell('td',each_row)}</tr>"             
     }.join
 
     table = "<table class=\"#{table_class}\"><thead>#{headers}</thead><tbody>#{cells}</tbody></table>"
 end
+
 
 	
 end
