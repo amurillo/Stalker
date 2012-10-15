@@ -109,7 +109,7 @@ class STALKER < Sinatra::Application
 	def ToTable(table_array,table_class)
  headers = "<tr>" + ToCell('th',table_array[0].keys) + "</tr>"
  cells = table_array.map do |row|
-   "<tr>#{ToCell('td',row.values)} <td><a href=\"#{table_array}\">  dsadsa </a></td> </tr>"
+   "<tr>#{ToCell('td',row.values)} <td><a href=\"#{table_class}\">  <i class='icon-remove'></i> </a></td> </tr>"
    
 end.join("\n  ")
 	
