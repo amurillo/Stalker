@@ -6,7 +6,7 @@
  		<% if session[:access_token] %>
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 		  <% @user_info = @api.get_object("me") %>
-		  <% @friends = @graph.get_connections(@user_info["id"], "friends")%>
+		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
 				
 		<%		@grouped = @friends.group_by{|t| t[0]}.values
 				@header = "<tr><td>ID</td> <td>Nombre</td> </tr>"
