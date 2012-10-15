@@ -72,7 +72,7 @@ class STALKER < Sinatra::Application
   		
 	end
 
-	get '/mensajes.html' do
+	get '/mensajes' do
 		if session['access_token']
 			erb :mensajes
 		else
@@ -91,6 +91,15 @@ class STALKER < Sinatra::Application
   		
 	end
 
+		get '/lista' do
+		if session['access_token']
+			erb :lista
+		else
+			redirect '/login'
+		end
+  		
+	end
+	
 	
 	def ToCell(tag,values)
     values.map { |c| "<#{tag}>#{c}</#{tag}>" }.join
@@ -100,7 +109,7 @@ class STALKER < Sinatra::Application
 	def ToTable(table_array,table_class)
  headers = "<tr>" + ToCell('th',table_array[0].keys) + "</tr>"
  cells = table_array.map do |row|
-   "<tr>#{ToCell('td',row.values)} <td>  dsadsa </td> </tr>"
+   "<tr>#{ToCell('td',row.values)} <td><a href=\"#{row.values}\">  dsadsa </a></td> </tr>"
    
 end.join("\n  ")
 	
