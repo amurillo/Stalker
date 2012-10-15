@@ -1,0 +1,23 @@
+ <div class="span9">
+ 
+           <div class="hero-unit">
+            <h1> Listado Amigos </h1>
+            <p>Amigos a los cuales seguir.</p>
+          </div>
+		  
+		           <div class="well data-bar">
+				   
+				   	 
+ 		<% if session[:access_token] %>
+		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
+		  <% @user_info = @api.get_object("me") %>
+		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
+		<%= ToTable(@friends,"table")%>
+
+
+			
+		  <% end %>
+				   
+				   
+				   </div>
+</div>

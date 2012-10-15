@@ -1,23 +1,14 @@
-	
+
 
 			 
  <div class="span9">
- 
- 		<% if session[:access_token] %>
-		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
-		  <% @user_info = @api.get_object("me") %>
-		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
-		<%= ToTable(@friends,"table")%>
 
-
-			
-		  <% end %>
 			 
 			 
           <div class="hero-unit">
             <h1>Objetivos</h1>
             <p>Personas "observadas" al momento.</p>
-    	 	  	<a href="" class="btn btn-large btn-success"><i class="icon-plus icon-white"></i> Nueva Victima</a>
+    	 	  	<a href="lista" class="btn btn-large btn-success"><i class="icon-plus icon-white"></i> Nueva Victima</a>
           </div>
 
          <div class="well data-bar">
