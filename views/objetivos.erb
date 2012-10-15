@@ -8,7 +8,6 @@
 		  <% @user_info = @api.get_object("me") %>
 		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
 		<%= ToTable(@friends,"table")%>
-		<%= @friends.map { |i| "'" + i.to_s + "'" }.join(",") %>
 
 
 			
