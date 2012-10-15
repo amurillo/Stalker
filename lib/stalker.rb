@@ -3,8 +3,6 @@ APP_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 require 'rubygems'
 require 'sinatra'
 require 'koala'
-requiere 'builder'
-
 
 # register your app at facebook to get those infos
 APP_ID = 1103868579752754 # your app id
@@ -105,8 +103,7 @@ class STALKER < Sinatra::Application
     }.join
 
     table = "<table class=\"#{table_class}\"><thead>#{headers}</thead><tbody>#{cells}</tbody></table>"
-	end
-
+end
 
 	
 end
