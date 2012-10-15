@@ -7,7 +7,10 @@
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 		  <% @user_info = @api.get_object("me") %>
 		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
-			<%= @friends['name'] %>
+		  <= @friends.map { |i| "'" + i.to_s + "'" }.join(",") %>
+
+
+			
 		  <% end %>
 			 
 			 
