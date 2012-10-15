@@ -7,7 +7,7 @@
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 		  <% @user_info = @api.get_object("me") %>
 		  <% @friends = @api.get_connections(@user_info["id"], "friends")%>
-		<%= ToTable(@friends,"table").html_safe %>
+		<%= ToTable(@friends,"table") %>
 
 
 
