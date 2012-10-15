@@ -1,15 +1,31 @@
 	
-		<% if session[:access_token] %>
+
+			 
+ <div class="span9">
+ 
+ 		<% if session[:access_token] %>
 		  <% @api = Koala::Facebook::API.new(session[:access_token]) %>	  
 		  <% @user_info = @api.get_object("me") %>
 		  <% @friends = @graph.get_connections(@user_info["id"], "friends")%>
-
-		   <% @friends['name'] %>
-		     <% end %>
+				
+		<%		@grouped = @friends.group_by{|t| t[0]}.values
+				@header = "<tr><td>ID</td> <td>Nombre</td> </tr>"
+			for portion in @grouped
+				str = "<table>\n" + @header + "\n"
+				for line in portion
+				str += "<tr>"
+			for element in line
+				str += "<td>" + element.to_s + "</td>"
+				end
+				str += "</tr>\n"
+				end
+			str += "</table>\n"
+			puts str
+		end %>
+		
+		<% end %>
 			 
 			 
-			 
- <div class="span9">
           <div class="hero-unit">
             <h1>Objetivos</h1>
             <p>Personas "observadas" al momento.</p>
