@@ -91,5 +91,20 @@ class STALKER < Sinatra::Application
   		
 	end
 
+	
+	def ToCell (tag,value)
+    value.map{ |c| "<#{tag}>#{c}</#{tag}>" }.join   
+	end
+
+	def ToTable (table_array, table_class)
+    headers = "<tr>" + ToCell('th',table_array[0]) + "</tr>"
+    cells = table_array[1..table_array.count].map{ |each_row|
+        "<tr>#{ToCell('td',each_row)}</tr>"             
+    }.join
+
+    table = "<table class=\"#{table_class}\"><thead>#{headers}</thead><tbody>#{cells}</tbody></table>"
+end
+
+	
 end
 
