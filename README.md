@@ -3,11 +3,25 @@ Proyecto-Desarrollo-Web--Stalker-
 
 Aplicativo Web para Stalkers
 
-Alejandro Nurillo
-Sebastian Guerra
+El aplicativo permitira hacer el seguimiento a las actualizaciones de estado, lugar entre otros de las personas que se seleccione en el listado que genera.
+
+Funcionamiento
+
+
+A traves de la perla "Koala" la aplicacion permite conectarse a facebook y visualizar el contenido de la persona elegida. Luego se enviara una serie de alertas al correo configurado a travez de CRON configurado en el RAKEFILE 
+
+
+Framework
+
+Se trabajo bajo el framework Twitter Bootstrap y hosting en HEROKU
+
+
+WEB
 
 http://hidden-brook-9507.herokuapp.com
 
+
+Links de Interes
 https://github.com/cookinfacebook/fb-koala-heroku/blob/master/app.rb
 https://github.com/arsduo/koala
 https://devcenter.heroku.com/articles/facebook-ruby
